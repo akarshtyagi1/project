@@ -24,7 +24,7 @@ body{
 
 .hulk{
     right: 0;
-    top: 900px;
+    top: 880px;
 }
 
 .bw{
@@ -34,4 +34,115 @@ body{
 .thor{
     right: 0;
     top: 1500px;
+}
+
+.main{
+    display: inline-block;
+    /* background-color: sienna; */
+    height: auto;
+    width: 70%;
+    font-family: 'Rowdies', cursive;
+    font-size: xx-large;
+}
+
+/* .box{
+     position: relative;  
+} */
+span{
+    display: inline-block;
+    height: 10%;
+    width: 10%;
+    position: relative;
+}
+.marvel{
+    display: inline;
+    width: 16%;
+    vertical-align: -36px;
+    /* position: absolute; */
+    /* top: 10px; */
+    /* padding: 5px; */
+
+    animation: pulsate .3s infinite ;
+    
+} 
+
+
+/* heading */
+
+
+.para-hulk{
+color: rgb(5, 150, 53);
+animation: moveInRight .5s;
+
+}
+
+.box{
+    color: hotpink;
+    /* font-size: medium; */
+}
+
+.para-avengers{
+   color: rgba(194, 19, 19, 0.815);
+   animation: moveInLeft .5s;
+}
+
+h3{
+    color: yellow;
+    animation: moveInRight .5s;
+}
+
+.closing{
+    color: rgba(0, 81, 255, 0.637);
+    animation: moveInLeft .5s;
+}
+
+
+/* Animations */
+
+@keyframes moveInLeft{
+    0%{
+      opacity: 0;
+      transform: translateX(-200px);
+  
+    }
+  
+    80%{
+    opacity: 0.8; 
+    transform: translateX(10px); 
+    }
+    100%{
+    opacity: 1;
+    transform: translateX(0);
+    }
+  }
+
+  @keyframes moveInRight{
+    0%{
+      opacity: 0;
+      transform: translateX(200px);
+    }
+  
+    80%{
+    opacity: 0.8;  
+    transform: translateX(-10px);
+    }
+    100%{
+    opacity: 1;
+    transform: translateX(0);
+    }
+  } 
+
+  @keyframes pulsate{
+   0%{
+      transform: scale(1);
+      box-shadow: none;
+   }
+   50%{
+      transform: scale(1.05);
+      /* box-shadow: 1px 2px rgba(255, 173, 51, 0.6); */
+   }
+   100%{
+      transform: scale(1);
+      box-shadow: none;
+   }
 }
