@@ -4,6 +4,8 @@ body{
     background-size: 100%;
     text-align: center;    
 }
+
+
 #loading{
     width: 100%;
     height: 100vh;
@@ -127,3 +129,145 @@ body{
 
       /* gallery */
 
+.container{
+    width: 100%;
+    max-width: 120rem;
+    position: relative;
+    margin-top: 100px;
+    padding: 0 1.5rem;
+    
+}
+
+.img-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-gap: 12px;
+    grid-template-areas: 'img-1 img-2 img-5 img-5' 
+                         'img-7 img-8 img-5 img-5'
+                         'img-15 img-11 img-12 img-13'
+                         'img-15 img-10 img-16 img-9'
+                         'img-18 img-18 img-19 img-20';
+}
+
+.img-gallery a{
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-gallery a ion-icon{
+    color: #ff0080;
+    font-size: 3rem;
+    border: 2px solid black;
+    border-radius: 0.4rem;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.img-gallery a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.img-gallery a:hover ion-icon,
+.img-gallery a:hover::before {
+    opacity:1;
+    /* transform: scaleX(1.4) scaleY(1.6); */
+}
+
+.img-1{
+    grid-area: img-1;
+    background-image: url(../diya_img/baby/img-1.jpg);
+}
+.img-2{
+    grid-area: img-2;
+    background-image: url(../diya_img/baby/img-2.jpeg);
+}
+.img-3{
+    grid-area: img-3;
+    background-image: url(../diya_img/baby/img-3.jpg);
+}
+.img-4{
+    grid-area: img-4;
+    background-image: url(../diya_img/baby/img-4.jpg);
+}
+.img-5{
+    grid-area: img-5;
+    min-height: 512px;
+    background-image: url(../diya_img/baby/img-5.jpg);
+}
+.img-6{
+    grid-area: img-6;
+    background-image: url(../diya_img/baby/img-6.jpg);
+}
+.img-7{
+    grid-area: img-7;
+    background-image: url(../diya_img/baby/img-7.jpg);
+}
+.img-8{
+    grid-area: img-8;
+    background-image: url(../diya_img/baby/img-8.jpg);
+}
+.img-9{
+    grid-area: img-9;
+    background-image: url(../diya_img/baby/img-9.jpg);
+}
+.img-10{
+    grid-area: img-10;
+    background-image: url(../diya_img/baby/img-10.jpg);
+}
+.img-11{
+    grid-area: img-11;
+    background-image: url(../diya_img/baby/img-11.jpg);
+}
+.img-12{
+    grid-area: img-12;
+    background-image: url(../diya_img/baby/img-12.jpg);
+}
+.img-13{
+    grid-area: img-13;
+    background-image: url(../diya_img/baby/img-13.jpg);
+}
+.img-14{
+    grid-area: img-14;
+    background-image: url(../diya_img/baby/img-14.jpg);
+}
+.img-15{
+    grid-area: img-15;
+    min-height: 512px;
+    background-image: url(../diya_img/baby/img-15.jpg);
+}
+.img-16{
+    grid-area: img-16;
+    background-image: url(../diya_img/baby/img-16.jpg);
+}
+.img-17{
+    grid-area: img-17;
+    background-image: url(../diya_img/baby/img-17.jpg);
+}
+.img-18{
+    grid-area: img-18;
+    background-image: url(../diya_img/baby/img-18.jpg);
+}
+.img-19{
+    grid-area: img-19;
+    background-image: url(../diya_img/baby/img-19.jpg);
+}
+.img-20{
+    grid-area: img-20;
+    background-image: url(../diya_img/baby/img-20.jpg);
+}
