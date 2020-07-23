@@ -145,10 +145,10 @@ body{
     grid-template-rows: auto;
     grid-gap: 12px;
     grid-template-areas: 'img-11 img-2 img-3 img-4' 
-                         'img-7 img-13 img-6 img-8'
-                         'img-15 img-10 img-1 img-8'
+                         'img-11 img-13 img-6 img-8'
+                         'img-15 img-5 img-1 img-8'
                          'img-15 img-10 img-18 img-9'
-                         'img-16 img-5 img-19 img-20'
+                         'img-7 img-10 img-19 img-20'
                          ;
 }
 
@@ -228,6 +228,7 @@ a.img{
 }
 .img-11{
     grid-area: img-11;
+    min-height: 612px;
     background-image: url(../diya_img/baby/img-11.jpg);
 }
 .img-12{
