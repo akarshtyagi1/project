@@ -109,6 +109,11 @@ body{
       height: 2.5rem;
    }
 
+   img.pic{
+      width: 45%;
+      height: 300px;
+   }
+
    img.hbd{
       width: 60vw;
       height: 45px;
