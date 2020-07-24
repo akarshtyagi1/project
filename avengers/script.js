@@ -11,9 +11,9 @@ function checkAnswer(event){
 
    name = event.target.id;
    answer = document.querySelector("input."+name).value;
-   console.log(name);      
    
    if( answer === name ){
+      $("div.popup-box img").attr("src","img/"+name+".jpg");
       content.addClass("blur");
       img.addClass("animation");
       popup.addClass("visible");
@@ -23,6 +23,7 @@ function checkAnswer(event){
       content.removeClass("blur");
       img.removeClass("animation");
       popup.removeClass("visible");
+      document.querySelector("input."+name).value = "";
      });
 
 }
