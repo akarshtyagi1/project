@@ -163,4 +163,61 @@ a:active{
 
 }
 
+
+/* images */
+.image-3{
+   display: flex;
+  
+   width: 100%;
+   margin: 2rem;
+   margin-top: 5rem;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.pic{
+height: 33%;
+cursor: pointer;
+transition: all .4s;
+}
+
+.pic:hover{  
+   transform: scale(1.25);
+   /* -webkit-backdrop-filter: blur(10px);
+   backdrop-filter: blur(10px);  
+  background-color: rgba(0, 0, 0, 0.534);  */
+}
+
+
+
+
 /* carousel */
+/* .carousel{
+   position: relative;
+   height: 100px;
+   
+} */
+/* .carousel-inner{
+   display: inline-block;
+   width: 80%;
+}
+
+.carousel-item{   
+   display: block;
+   width: 1125px;
+}
+} */
+
+ .d-block{
+   display: block;
+   max-height: 500px;
+   max-width: 800px;
+   height: auto;
+   width: auto;
+   text-align: center;
+   margin: 0 auto;
+  
+ }
+

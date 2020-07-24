@@ -7,6 +7,7 @@ body{
 
 .icon{
     position: absolute;
+    width: 15vw;
 }
 
 .cap{
@@ -41,7 +42,8 @@ body{
     /* background-color: sienna; */
     height: auto;
     width: 70%;
-    font-family: 'Rowdies', cursive;
+    font-family: 'Red Rose', cursive;
+    font-weight: bolder;
     font-size: xx-large;
 }
 
@@ -145,4 +147,74 @@ h3{
       transform: scale(1);
       box-shadow: none;
    }
+}
+
+
+/* wishes */
+
+div.wish-box{
+    display: inline-block;
+    width: 33vw;
+    border: white solid 2px;
+    padding: 10px;
+}
+
+div.wish-box p{
+    color: white;
+    text-align: justify;
+}
+
+input{
+    padding: 5px;
+    width: 80%;
+    height: 30px;
+}
+
+.submit{
+    position: relative;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+
+.blur{
+    filter: blur(15px);
+    transition: all 0.3s;
+}
+
+.popup-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+img.popup-img{
+    width: 45vw;
+    
+}
+
+.popup-box.visible{
+    visibility: visible;
+    opacity: 1;
+}
+
+.animation{
+    animation: top 0.7s ease-out backwards;
+}
+
+@keyframes top{
+    0%{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
