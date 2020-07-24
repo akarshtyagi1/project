@@ -196,6 +196,7 @@ input{
 
 img.popup-img{
     width: 45vw;
+    display: inline-block;
     
 }
 
@@ -203,6 +204,16 @@ img.popup-img{
     visibility: visible;
     opacity: 1;
 }
+
+#close-icon{
+    position: absolute;
+    font-size: 45px;
+    border-radius: 100%;
+    color: white;
+    background-color: white;
+    margin-top: 30px;
+}
+
 
 .animation{
     animation: top 0.7s ease-out backwards;
