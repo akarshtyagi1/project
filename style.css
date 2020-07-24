@@ -1,21 +1,45 @@
-.title{
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body.title{
+    width: fit-content;
     text-align: center;
-    margin: 5rem auto auto auto;
-    background-color: #000
-    color:#fff;
+    background-color: #000;                  
     background-image: url("images/bgphoto4.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
+@media screen and (max-width: 1130px){
+    #title{
+        width: 80vw;
+        height: 20vh;
+    }
 
-.heading{
-    font-size: 6.5rem;
-    font-family: "Galada",cursive;
-    padding: 1rem;
-    color: #ffd11a;
+    .image{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #title{
+        width: 80vw;
+        height: 15vh;
+    }
+
+    .btn-group{
+        width: 40%;
+        margin: 20px 0;
+    }
 }
 
 .btn{
@@ -24,21 +48,6 @@
     animation: moveInRight 1s ease-out;
 }
 
-
-
-.row{
-    text-align: center;
-    margin: auto;
-}
-
-body{
-    text-align: center;
-}
-
-.block{
-    padding: 25px;
-    margin: 100px;
-}
 
 td:hover{
     background-color: red;
@@ -50,21 +59,6 @@ td:hover{
     padding: 1rem;
 }
 
-#title{
-    width: 90vw;
-    padding: 10px;
-    position: relative;
-    right: 4vw;
-}
-
-.center,thead{
-    text-align: center;
-}
-
-select{
-    height: 500px;
-    overflow-y: scroll;
-}
 
 #date,#month,#submit{
     border: solid 2px #fff;
@@ -74,7 +68,6 @@ select{
     background-color: hsla(51, 100%, 50%, 0.555);
     transition: all 0.2s;
 }
-
 
 #date:hover,#month:hover,#submit:hover{
     background-color: rgba(255, 255, 0, 0.904);
@@ -120,4 +113,5 @@ select{
     transform: translateX(0);
     }
   } 
+ 
 
