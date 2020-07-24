@@ -81,7 +81,7 @@ span{
 }
 
 .para-avengers{
-   color: rgba(194, 19, 19, 0.815);
+   color: rgb(194, 19, 19);
    animation: moveInLeft .5s;
    font-size: 30px;
 }
@@ -92,7 +92,7 @@ h1{
 }
 
 .closing{
-    color: rgba(0, 81, 255, 0.637);
+    color: rgba(0, 225, 255, 0.753);
     animation: moveInLeft .5s;
     font-size: 30px;
 }
@@ -125,9 +125,7 @@ h1{
         display: inline;
     }
 
-    div.wish-box{
-        width: 80vw;
-    }
+    
 
 }
 
@@ -202,7 +200,7 @@ div.wish-box{
 
 div.wish-box p{
     color: rgb(236, 235, 225);
-    font-size: 24px;
+    font-size: 20px;
     text-align: justify;
 }
 
@@ -248,9 +246,7 @@ img.popup-img{
     display: inline-block;  
 }
 
-@media screen and (max-width: 950px){
-    min-width: 400px;
-}
+
 
 .popup-box.visible{
     visibility: visible;
@@ -279,5 +275,25 @@ img.popup-img{
     100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 800px) and (min-width:200px){
+    div.wish-box{
+        width: 80vw;
+    }
+
+    div.wish-box p{
+        font-size: 12px;
+    }
+
+    img.popup-img{
+        width: 60vw;
+        height: 60vh ;
+    }
+
+    #close-icon{
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
