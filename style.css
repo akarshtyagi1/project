@@ -17,12 +17,23 @@ body.title{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    transition: all 0.4s;
 }
 
 @media screen and (max-width: 1130px){
     #title{
-        width: 80vw;
+        width: 95vw;
         height: 20vh;
+    }
+    
+    button#date,button#month,button#submit{
+        padding: 3px 5px;
+        font-size: 1.2rem;
+    }
+
+    .btn-group{
+        width: 40%;
+        margin: 20px 0;
     }
 
     .image{
@@ -32,14 +43,24 @@ body.title{
 
 @media screen and (max-width: 500px){
     #title{
-        width: 80vw;
+        width: 95vw;
         height: 15vh;
     }
 
+    button#date,button#month,button#submit{
+        padding: 4px 5px;
+        font-size: 1rem;
+    }
+
     .btn-group{
-        width: 40%;
+        width: 35%;
         margin: 20px 0;
     }
+
+    button#submit{
+        width: 35%;
+    }
+
 }
 
 .btn{
