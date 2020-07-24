@@ -155,6 +155,7 @@ h3{
 div.wish-box{
     display: inline-block;
     width: 33vw;
+    min-width: 385px;
     border: white solid 2px;
     padding: 10px;
 }
@@ -166,15 +167,21 @@ div.wish-box p{
 
 input{
     padding: 5px;
-    width: 80%;
+    width: 85%;
     height: 30px;
+    border: none;
+    border-radius: 10px;
 }
 
 .submit{
+    background-color: white;
     position: relative;
     top: 15px;
-    width: 40px;
+    font-size: 16px;
+    width: 10%;
     height: 40px;
+    border: none;
+    margin-left: 5px;
     border-radius: 100%;
 }
 
@@ -196,9 +203,10 @@ input{
 
 img.popup-img{
     width: 45vw;
-    display: inline-block;
-    
+    display: inline-block;  
 }
+
+@media screen and (max-width: )
 
 .popup-box.visible{
     visibility: visible;

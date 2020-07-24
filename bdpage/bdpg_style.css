@@ -60,18 +60,7 @@ body{
     box-shadow: black 2px 2px 2px;
 }
 
-.btn{
-    background-color: #ffb3b3;
-    position: relative;
-    top: 40vh;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2rem;
-    text-transform: uppercase;
-}
 
-.btn:hover{
-    background-color: #ffcccc;
-}
 
 .para{
     font-family: 'Caveat';
@@ -80,6 +69,32 @@ body{
     color: rgb(151, 26, 74);
     margin: 0 30px;
 }
+
+button{
+    padding: 20px;
+    width: 10rem;
+    position: relative;
+    bottom: 100px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.4s;
+    font-family: cursive;
+    font-size: large;
+    box-shadow: 0px 0px 10px 0px #e60f93;
+    background: linear-gradient(to right,rgb(255, 153, 204),rgb(216, 98, 190));
+}
+
+button:hover{
+    transform: translateY(-15px);
+    box-shadow: 0px 10px 10px 0px #7e1181;
+}
+
+.end-tag{
+    position: relative;
+    bottom: 200px;
+}
+
 @media only screen and (max-width: 600px){
     .para{
         font-size: 3rem;
