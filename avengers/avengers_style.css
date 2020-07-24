@@ -58,11 +58,7 @@ span{
 .marvel{
     display: inline;
     width: 16%;
-    vertical-align: -36px;
-    /* position: absolute; */
-    /* top: 10px; */
-    /* padding: 5px; */
-
+    vertical-align: -36px;  
     animation: pulsate .3s infinite ;
     
 } 
@@ -100,7 +96,16 @@ h1{
     animation: moveInLeft .5s;
     font-size: 30px;
 }
+@media (max-width: 800px) and (min-width:200px){
+    .para-hulk, .para-avengers, .closing{
+        font-size: 20px;
+    }
 
+    img.marvel{
+        position: relative;
+        bottom: 30px;
+    }
+}
 
 /* Animations */
 
@@ -151,6 +156,8 @@ h1{
       box-shadow: none;
    }
 }
+
+
 
 
 /* wishes */
