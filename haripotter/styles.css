@@ -72,7 +72,7 @@ body{
    transition: all 2s;
 }
 
- @media (max-width: 833px){
+ @media (max-width: 833px) and (min-width: 451px){
 
    h2.wish{
       font-size: 1.5rem;
@@ -92,7 +92,29 @@ body{
       height: 150px;
       width: 100vw;
    }
+
+   img.hbd{
+      width: 60vw;
+      height: 45px;
+   }
 }
+
+@media (max-width: 450px){
+   h2.wish{
+      font-size: 1rem;
+      line-height: 1rem;
+   }
+
+   div.wish-box img.word{
+      height: 2.5rem;
+   }
+
+   img.hbd{
+      width: 60vw;
+      height: 45px;
+   }
+}
+
 /* button */
 button.btn{
    padding: 6px;
