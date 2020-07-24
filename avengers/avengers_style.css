@@ -57,7 +57,7 @@ span{
 }
 .marvel{
     display: inline;
-    width: 16%;
+    width: 25%;
     vertical-align: -36px;  
     animation: pulsate .3s infinite ;
     
@@ -99,12 +99,36 @@ h1{
 @media (max-width: 800px) and (min-width:200px){
     .para-hulk, .para-avengers, .closing{
         font-size: 20px;
+        text-align: justify;
+    }
+
+    .main{
+        width: 90vw;
+        text-align: center;
+        position: relative;
+        left: 0vw;
     }
 
     img.marvel{
+        bottom: 50px;
+        width: 30%;
         position: relative;
-        bottom: 30px;
+        top: -15px;
     }
+
+    .icon{
+        position: static;
+        width: 15vw;
+    }
+
+    div.icons div{
+        display: inline;
+    }
+
+    div.wish-box{
+        width: 80vw;
+    }
+
 }
 
 /* Animations */
@@ -155,6 +179,7 @@ h1{
       transform: scale(1);
       box-shadow: none;
    }
+   
 }
 
 
@@ -165,7 +190,6 @@ h1{
 div.wish-box{
     display: block;
     width: 60%;
-    min-width: 385px;
     border: white solid 2px;
     padding: 10px;
     position: relative;
