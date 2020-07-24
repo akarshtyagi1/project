@@ -11,6 +11,9 @@ function checkAnswer(event){
 
    name = event.target.id;
    answer = document.querySelector("input."+name).value;
+   answer =answer.toLowerCase();
+   answer = answer.slice(0, (name.length));
+   
    
    if( answer === name ){
       $("div.popup-box img").attr("src","img/"+name+".jpg");
