@@ -100,6 +100,15 @@ h1{
 iframe{
     border-radius: 30px;
 }
+p.wish-arshiya{
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+}
+
+.hbd-arshiya{
+    font-size: 35px;
+}
 
 @media (max-width: 800px) and (min-width:200px){
     .para-hulk, .para-avengers, .closing{
@@ -126,18 +135,18 @@ iframe{
 
     .icon{
         position: static;
-        width: 15vw;
+        width: 13vw;
     }
 
     div.icons div{
         display: inline;
     }
 
-    .wish-arshiya{
+    p.wish-arshiya{
         font-size: 20px;
     }
 
-    .hbd-arshiya{
+    h2.hbd-arshiya{
         font-size: 30px;
     }
 
@@ -348,13 +357,4 @@ img.popup-img{
 
 /* arshiya */
 
-p.wish-arshiya{
-    font-size: 30px;
-    font-weight: bold;
-    color: green;
-}
-
-.hbd-arshiya{
-    font-size: 35px;
-}
 
