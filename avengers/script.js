@@ -19,7 +19,15 @@ function checkAnswer(event){
       $("div.popup-box img").attr("src","img/"+name+".jpg");
       content.addClass("blur");
       img.addClass("animation");
+      $("div.heading-box").css("visibility","visible");
       popup.addClass("visible");
+   }
+   else{
+      content.addClass("blur");
+      img.addClass("animation");
+      popup.addClass("visible");
+      $("div.heading-box").css("visibility","hidden");
+      $("div.popup-box img").attr("src","img/oops.png");
    }
 
    close.click(function () {

@@ -96,12 +96,20 @@ h1{
     animation: moveInLeft .5s;
     font-size: 30px;
 }
+
+iframe{
+    border-radius: 30px;
+}
+
 @media (max-width: 800px) and (min-width:200px){
     .para-hulk, .para-avengers, .closing{
         font-size: 20px;
         text-align: justify;
     }
 
+    body{
+        margin: 10px;
+    }
     .main{
         width: 90vw;
         text-align: center;
@@ -135,6 +143,7 @@ h1{
 
     iframe{
         width: 90vw;
+        border-radius: 30px;
     }
 
 }
@@ -254,6 +263,7 @@ img.popup-img{
     width: 45vw;
     height: 80vh;
     display: inline-block;  
+    border-radius: 30px;
 }
 
 
@@ -287,6 +297,16 @@ img.popup-img{
         transform: translateY(0);
     }
 }
+.pop-up-heading{
+    font-family: "Bangers", sans-serif;
+    font-size: 70px;
+    color: honeydew;
+}
+
+.heading-box{
+    position: absolute;
+    top: -100px;
+}
 
 @media (max-width: 800px) and (min-width:200px){
     div.wish-box{
@@ -306,6 +326,11 @@ img.popup-img{
         left: 50%;
         transform: translateX(-50%);
     }
+    .pop-up-heading{
+        font-family: "Bangers", sans-serif;
+        font-size: 50px;
+        
+    }
 }
 
 /* arshiya */
@@ -319,3 +344,4 @@ p.wish-arshiya{
 .hbd-arshiya{
     font-size: 35px;
 }
+
