@@ -31,6 +31,7 @@ function checkAnswer(event){
    }
 
    close.click(function () {
+      $("div.popup-box img").attr("");
       content.removeClass("blur");
       img.removeClass("animation");
       popup.removeClass("visible");
