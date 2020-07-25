@@ -125,7 +125,17 @@ h1{
         display: inline;
     }
 
-    
+    .wish-arshiya{
+        font-size: 20px;
+    }
+
+    .hbd-arshiya{
+        font-size: 30px;
+    }
+
+    iframe{
+        width: 90vw;
+    }
 
 }
 
@@ -296,4 +306,16 @@ img.popup-img{
         left: 50%;
         transform: translateX(-50%);
     }
+}
+
+/* arshiya */
+
+p.wish-arshiya{
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+}
+
+.hbd-arshiya{
+    font-size: 35px;
 }
