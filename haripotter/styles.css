@@ -9,6 +9,7 @@ body{
     background-size: 100% auto;
     text-align: center;   
     width: fit-content;
+    animation: opacity 1.5s ease-out 0.5s backwards;
 }
 
 .wish-box{
@@ -19,8 +20,8 @@ body{
    box-shadow: 0 2rem 1rem rgba(0,0,0,0.5);
    border-radius: 50px;
    padding: 1rem;
-   animation: opacity 1.5s ease-out 0.5s backwards;
-   transition: all 2s;
+   /*  */
+   
 }
 
 .wish{
@@ -69,7 +70,7 @@ body{
    position: relative;
    height: 300px;
    width: 100vw;
-   transition: all 2s;
+   transition: all 0.2s;
 }
 
 
@@ -89,6 +90,7 @@ body{
    transition: all .4s;
    position: relative;
    border-radius: 25px;
+   box-shadow: #000000 10px 20px 50px;
 }
 
 .pic:hover, .pic-4:hover{  
@@ -105,6 +107,7 @@ body{
    transition: all .4s;
    position: relative;
    border-radius: 25px;
+   box-shadow: #000000 10px 20px 50px;
  }
 
 .pic-4:hover{
@@ -135,7 +138,7 @@ body{
 
    .icons{
       height: 150px;
-      width: 90vw;
+      width: 100vw;
    }
 
    .pic-4{
@@ -173,17 +176,28 @@ body{
 
 /* button */
 button.btn{
-   padding: 6px;
+   padding: 6px 12px;
    font-size: large;
    font-weight: bold;
    position: absolute;
-   top: 50%;
+   top: 80%;
    left: 50%;
    transform: translate(-50%, -50%);
-   background-color: aliceblue;
-   border-radius: 10px;
+   background-color: rgb(199, 172, 22);
+   border-radius: 35px;
+   box-shadow: black 5px 5px 15px;
+
 }
 
+button a, button a:hover, button a:visited{
+   text-decoration: none;
+   color: black;
+}
+
+button.btn:hover{
+   box-shadow: white 0px 15px 20px ;
+   background-color: yellow;
+}
 
 @keyframes opacity{
    0% {
@@ -205,6 +219,7 @@ button.btn{
    text-align: center;
    margin: 0 auto;
    border-radius: 30px;
+   transition: all 1s;
  }
 
  img.res{
@@ -218,7 +233,15 @@ button.btn{
 }
  .carousel-inner{
     padding: 30px;
- 
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.6), #ffffffc9);
+    width: 90vw;
+    margin-top: 20px;
+    margin-left: 5vw;
+    position: relative;
+    z-index: -1;
+    border-radius: 50px;
+    transition: all 1s;
+    box-shadow: 0 2rem 1rem rgba(0,0,0,0.5);
  }
 
 
@@ -242,10 +265,10 @@ hr.style-seven:before { /* Not really supposed to work, but does */
 }
 
 div.end{
-   margin-top: 60px;
    padding: 20px;
    width: 60vw;
-   position: relative;
+   position: absolute;
+   top: 30%;
    left: 50%;
    transform: translateX(-50%);
 }

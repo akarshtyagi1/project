@@ -1,3 +1,4 @@
+// document.addEventListener("load",ready);
 var d;
 var m;
 
@@ -15,7 +16,7 @@ $(".mahina td").click(function(event){
 
 $("#submit").click(function(){
     if( d == 26 && m == "July")
-        open("bdpage/index.html");
+        open("bdpage/index.html","_self");
     else
-        alert("Aaj tera budday nahi hai....Diya ka hai ....uski birth date daal");    
+        alert("Kindly put Diya's Birth date🙄🤨😒");    
 });
